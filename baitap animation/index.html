@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài tập animation</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			animation-name: faded;
+			animation-duration: 4s; 
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite; 
+		}
+		@keyframes faded {
+			0%{opacity: 0.0; transform: translateX(10px);}
+			50%{opacity: 1.0; transform: translateX(60px);};
+			100%{opacity: 0.0; transform: translateX(-50px);}
+		}
+		h1{
+			text-align: center;
+			background: black;
+			color: white;
+			animation-name: rainbow;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes rainbow{
+			0%{background: black; color: white;}
+			14.28%{background-color: red; color: orange;}
+			28.56%{background-color: orange; color: yellow;};
+			42.84%{background-color: yellow; color: green;};
+			57.14%{background-color: green; color: blue;}
+			71.28%{background-color: blue; color: indigo;}
+			85.56%{background-color: indigo; color: violet;}
+			100%{background-color: white; color: black;}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<h1>Bài tập animation</h1>
+</body>
+</html>
