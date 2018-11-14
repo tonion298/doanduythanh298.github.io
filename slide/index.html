@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tạo trang image gallery</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.clearfix::after {
+		    content: "";
+		    clear: both;
+		    display: table;
+		}
+		body{
+			width: 1000px;
+			margin: 5px auto;
+			color: white;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.nav{
+			width: 100%;
+			background-color: black;
+			text-align: center;
+		}
+		.nav li{
+			display: inline-block;
+			padding: 20px;
+			margin: 0px;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+		}
+		li:hover{
+			background-color: red;
+		}
+		.slide{
+			width: 33.33%;
+			float: left;
+			padding: 5px;
+		}
+		.slide:hover{
+			background-color: black;
+		}
+		.describ{
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<img src="banner.png" alt="banner">
+	<ul class="nav">
+		<li><a href="#">Menu1</a></li>
+		<li><a href="#">Menu2<a></li>
+		<li><a href="#">Menu3</a></li>
+		<li><a href="#">Menu4</a></li>
+	</ul>
+	<div class="slide">
+		<img src="1.jpg" alt="anh1">
+		<div class="describ">Anh 3</div>
+	</div>
+	<div class="slide">
+		<img src="2.jpg" alt="anh3">
+		<div class="describ">Anh 1</div>
+	</div>
+	<div class="slide">
+		<img src="3.jpg" alt="anh3">
+		<div class="describ">Anh 3</div>
+	</div>
+	<div class="slide">
+		<img src="4.jpg" alt="anh4">
+		<div class="describ">Anh 4</div>
+	</div><div class="slide">
+		<img src="5.jpg" alt="anh5">
+		<div class="describ">Anh 5</div>
+	</div><div class="slide">
+		<img src="6.jpg" alt="anh6">
+		<div class="describ">Anh 6</div>
+	</div>
+	<div class="slide">
+		<img src="7.jpg" alt="anh7">
+		<div class="describ">Anh 7</div>
+	</div>
+	<div class="slide">
+		<img src="8.jpg" alt="anh8">
+		<div class="describ">Anh 8</div>
+	</div>
+	<div class="slide">
+		<img src="9.jpg" alt="anh9">
+		<div class="describ">Anh 9</div>
+	</div>
+	<div class="slide">
+		<img src="10.jpg" alt="anh10">
+		<div class="describ">Anh 10</div>
+	</div>
+	<div class="slide">
+		<img src="11.jpg" alt="anh11">
+		<div class="describ">Anh 11</div>
+	</div>
+	<div class="slide">
+		<img src="12.jpg" alt="anh12">
+		<div class="describ">Anh 12</div>
+	</div>
+	<div class="clearfix"></div>
+</body>
+</html>
