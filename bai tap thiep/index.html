@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrap{
+			height: 950px;
+			width: 950px;
+			margin: auto;
+		}
+		.wrap img{
+			width: 900px;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			z-index: 0;
+		}
+		.centered {
+  			position: fixed;
+  			top: 50%;
+  			left: 50%;
+  			/* bring your own prefixes */
+  			transform: translate(-50%, -50%);
+		}
+		h1{
+			text-align: center;
+			padding: 0;
+			animation-name: postcard;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease;
+			animation-duration: 10s;
+		}
+		@keyframes postcard{
+			0%{color: red; transform: translateX(-30px);}
+			33.33%{transform: translateY(-30px); color: blue;}
+			66.66%{transform: translateX(30px); color: green;}
+			100%{transform: translateY(30px);color: violet;}
+		}
+		
+	</style>
+</head>	
+<body>
+	<div class="wrap">
+			<img class="centered" src="bg.jpg" alt="thiep">
+			<h1>Happy Birthday</h1>
+	</div>
+</body>
+</html>
