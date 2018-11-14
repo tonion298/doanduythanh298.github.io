@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bai tap position</title>
+  <meta charset="UTF-8"/>
+  <style>
+  	*{
+  		box-sizing: border-box;
+  	}
+		ul{
+			text-decoration: none;
+			list-style: none;
+			width: 20%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		li {
+			height: 40px;
+			text-align: center;
+			border-bottom: 1px solid black;
+		}
+		.content{
+			margin-left: 20%;
+			height: 3000px;
+			background-color: gray;
+		}
+		.backtotop{
+			width: 60px;
+			height: 60px;
+			border-radius: 30px;
+			background-color: red;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			text-align: center;
+			z-index: 1;
+		}
+		.backtotop a{
+			text-decoration: none;
+			color: black;
+		}
+  </style>
+</head>
+<body>
+	<ul>
+		<li><a href="#"></a>Menu 1</li>
+		<li><a href="#"></a>Menu 2</li>
+		<li><a href="#"></a>Menu 3</li>
+		<li><a href="#"></a>Menu 4</li>
+		<li><a href="#"></a>Menu 5</li>
+	</ul>
+	<div class="content">
+		<div class="backtotop">
+			<a href="#">Top</a>
+	</div>
+	</div>
+	
+</body>
