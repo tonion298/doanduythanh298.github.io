@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bai tap position</title>
+  <title>Bài tập position</title>
   <meta charset="UTF-8"/>
-  <style>
-  	*{
-  		box-sizing: border-box;
-  	}
-		ul{
-			text-decoration: none;
-			list-style: none;
-			width: 20%;
-			height: 100%;
-			margin: 0px;
-			padding: 0px;
-			position: absolute;
-			left: 0px;
-			top: 0px;
-		}
-		li {
-			height: 40px;
-			text-align: center;
-			border-bottom: 1px solid black;
-		}
-		.content{
-			margin-left: 20%;
-			height: 3000px;
-			background-color: gray;
-		}
-		.backtotop{
-			width: 60px;
-			height: 60px;
-			border-radius: 30px;
-			background-color: red;
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			text-align: center;
-			z-index: 1;
-		}
-		.backtotop a{
-			text-decoration: none;
-			color: black;
-		}
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-	<ul>
-		<li><a href="#"></a>Menu 1</li>
-		<li><a href="#"></a>Menu 2</li>
-		<li><a href="#"></a>Menu 3</li>
-		<li><a href="#"></a>Menu 4</li>
-		<li><a href="#"></a>Menu 5</li>
-	</ul>
-	<div class="content">
-		<div class="backtotop">
-			<a href="#">Top</a>
+	<div class="container">	
+		<header>
+			<div class="searchbox" id="top">
+				<div class="left">
+					<img src="" alt="">
+				</div>
+				<div class="right">
+					<form>
+						<input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
+					</form>
+				</div>
+			</div>
+			<div class="login right">
+				<a href="#">Login</a>
+			</div>
+			<div class="register right">
+				<a href="#">Register</a>
+			</div>	
+			<div class="clearfix"></div>
+			<div class="header-nav">
+				<ul>
+					<li><a href="#"><i class="fas fa-stream"></i> Danh mục sản phẩm</a></li>
+					<li><a href="#"><i class="fas fa-map-marker-alt"></i> Bạn muốn giao hàng tới đâu</a></li>
+					<li><a href="#"><i class="fas fa-cart-plus"></i> Sản phẩm bạn đã xem</a></li>
+					<li><a href="#"><i class="fas fa-clock"></i> 2 tiếng nhận hàng</a></li>
+					<li><a href="#"><i class="fas fa-medal"></i> Sản phẩm 100% chính hiệu</a></li>
+				</ul>
+			</div>		
+			<div class="clearfix"></div>
+		</header>
+		<!-- end of header -->
+		<section>
+			<div class="bar">
+				<ul class="sidebar">
+					<li><a href="#"><i class="fas fa-mobile"></i>  Điện thoại</a></li>
+					<li><a href="#"><i class="fas fa-tv"></i>  Ti vi - Thiết bị nghe nhìn</a></li>
+					<li><a href="#"><i class="fas fa-headphones"></i>  Phụ kiện-thiết bị số</a></li>
+					<li><a href="#"><i class="fas fa-laptop"></i>  Laptop-thiết bị IT</a></li>
+					<li><a href="#"><i class="fas fa-camera"></i>  Máy ảnh- quay phim</a></li>
+					<li><a href="#"><i class="fas fa-bolt"></i>  Điện gia dụng- điện lạnh</a></li>
+					<li><a href="#"><i class="fas fa-home"></i>  Nhà cửa đời sống</a></li>
+					<li><a href="#"><i class="fas fa-utensils"></i>  Hàng tiêu dùng - thực phẩm</a></li>
+					<li><a href="#"><i class="fas fa-alicorn"></i>  Đồ chơi, mẹ & bé</a></li>
+					<li><a href="#"><i class="fas fa-medkit"></i>  Làm đẹp - sức khỏe</a></li>
+					<li><a href="#"><i class="fas fa-tshirt"></i>  Thời trang- phụ kiện</a></li>
+					<li><a href="#"><i class="far fa-futbol"></i>  Thể thao - Dã ngoại</a></li>
+					<li><a href="#"><i class="fas fa-car"></i>  Xe Máy, Ô tô, Xe đạp</a></li>
+					<li><a href="#"><i class="fas fa-book"></i>  Sách, VPP & quà tặng</a></li>
+					<li><a href="#"><i class="fab fa-cc-visa"></i>  Voucher - Dịch vụ - Thẻ cào</a></li>
+				</ul>
+				<div class="sidebar-content">
+					<img src="1.png" alt="flashsales" style="height:600px; width: 100%">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<!-- end of sidebar -->
+
+			<div class="row">
+				<div><h4>NGÀNH HÀNG QUAN TÂM</h4></div>
+				<div class="gallery">
+					<a href="#"><img src="2.jpeg" alt="item5"></a>
+					<div class="desc">Nhà sách tiki</div>
+				</div>
+				
+				<div class="gallery">
+					<a href="#"><img src="3.jpg" alt="item1"></a>
+					<div class="desc">Đồ chơi- Mẹ & bé</div>
+				</div>
+				
+				<div class="gallery">
+					<a href="#"><img src="4.jpeg" alt="item2"></a>
+					<div class="desc">Bách hóa online</div>
+				</div>
+				
+				<div class="gallery">
+					<a href="#"><img src="5.jpeg" alt="item3"></a>
+					<div class="desc">Thời trang</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row2">
+				<a href="#">Lớp học mật ngữ</a>
+				<a href="#">Giày nam</a>
+				<a href="#">Innisfree</a>
+				<a href="#">BTS</a>
+				<a href="#">harry potter</a>
+				<a href="#">sạc dự phòng</a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="row">
+				<div class="gallery1">
+					<a href="#"><img src="6.jpeg" alt="Item"></a>
+					<div class="desc">Item 1</div>
+				</div>
+				<div class="gallery1">
+					<a href="#"><img src="7.jpeg" alt=""></a>
+					<div class="desc">Item 2</div>
+				</div>
+				<div class="gallery1">
+					<a href="#"><img src="8.jpeg" alt=""></a>
+					<div class="desc">Item 3</div>
+				</div>
+				<div class="gallery1">
+					<a href="#"><img src="9.jpeg" alt=""></a>
+					<div class="desc">Item 4</div>
+				</div>
+				<div class="gallery1">
+					<a href="#"><img src="10.jpeg" alt=""></a>
+					<div class="desc">Item 5</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<footer>
+			<p><strong>2016-Bản quyền của công ty cổ phần Ti Ki- Ti Ki.vn</strong></p>
+			<p style="font-size: 12px;">Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 06/01/2010</p>
+		</footer>
+
+		<a class="backtotop" href="#top">Top</a>
+
 	</div>
-	</div>
-	
 </body>
